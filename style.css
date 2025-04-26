@@ -9,8 +9,8 @@
 body {
     background: linear-gradient(
     to bottom,
-    hsl(225, 80%, 10%), /* Neutral 900 no topo */
-    hsl(226, 25%, 17%) /* Neutral 800 no meio */
+    hsl(225, 85%, 8%), /* Neutral 900 no topo */
+    hsl(227, 75%, 14%)
   );
   min-height: 100vh; /* Garante que o fundo cubra a tela inteira */
   margin: 0;
@@ -24,6 +24,7 @@ body {
     max-width: 1400px; 
     margin: 0 auto; 
     padding: 0 40px; 
+    width: 100%;
 }
 
 header {
@@ -70,6 +71,7 @@ nav {
     align-items: center;
     height: 30px;
     width: 100%;
+    margin-bottom: 25px;
 }
 
 .filters ul {
@@ -89,5 +91,47 @@ nav {
     background-color: hsl(3, 71%, 56%);
 }
 
+.extension-box {
+    box-sizing: border-box;
+    background-color: hsl(225, 23%, 24%);
+    height: 150px;
+    width: 350px;
+    padding: 15px;
+    border-radius: 15px;
+    border-color: hsl(0, 0%, 78%);
+    border-width: 2px;
+}
+
+.extension-text > h1 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.extension-text > p {
+    font-size: 0.8rem;
+    color: hsl(0, 0%, 78%);
+}
+
+.img_and_content {
+    display: flex;
+    gap: 10px;
+}
+
+.img_and_content > img {
+    height: 45px;
+}
+
+.container-grid-extensions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+.container-grid-extensions > div {
+    background-color: aliceblue;
+    height: 150px;
+    border-radius: 15px;
+}
 
 
