@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -9,10 +11,10 @@
 body {
     background: linear-gradient(
     to bottom,
-    hsl(225, 85%, 8%), /* Neutral 900 no topo */
+    hsl(225, 85%, 8%),
     hsl(227, 75%, 14%)
   );
-  min-height: 100vh; /* Garante que o fundo cubra a tela inteira */
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -31,7 +33,7 @@ header {
 	margin-top: 40px;
 	height: 60px;
     width: 100%;
-    background-color: hsl(225, 23%, 24%);
+    background-color: hsl(226, 25%, 17%);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -54,15 +56,25 @@ nav {
     object-fit: contain;
 }
 
+.title > h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+}
+
 .box-theme-icon {
     width: 40px;
     height: 40px;
-    background-color: hsl(226, 11%, 37%);
+    background-color: hsl(225, 23%, 24%);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.box-theme-icon:hover {
+    background-color: hsl(226, 11%, 37%);
 }
 
 .title-and-filters {
@@ -81,13 +93,19 @@ nav {
 }
 
 .filters ul > li {
-    background-color: hsl(226, 11%, 37%);
+    background-color: hsl(225, 23%, 24%);
     padding: 8px 16px;
     border-radius: 20px;
     cursor: pointer;
+    transition: background-color, 0.1s ease;
+}
+
+.filters ul > li:hover {
+    background-color: hsl(226, 11%, 37%);
 }
 
 #active {
+    transition: background-color 0.3s ease;
     background-color: hsl(3, 71%, 56%);
 }
 
@@ -106,6 +124,7 @@ nav {
 }
 
 .extension-text > h1 {
+    font-family: "Noto Sans", sans-serif;
     font-size: 1rem;
     margin-bottom: 5px;
 }
@@ -113,6 +132,7 @@ nav {
 .extension-text > p {
     font-size: 0.8rem;
     color: hsl(0, 0%, 78%);
+    font-family: "Noto Sans", sans-serif;
 }
 
 .img_and_content {
@@ -132,28 +152,51 @@ nav {
 }
 
 .container-grid-extensions > div {
-    background-color: hsl(225, 23%, 24%);
+    background-color: hsl(226, 25%, 17%);
     height: 150px;
     border-radius: 15px;
+    border-style: groove;
+    border-width: 0.5px;
+    border-color: hsl(226, 11%, 37%);
 }
 
 .extension-options {
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 } 
 
 .remove {
     color: hsl(0, 0%, 93%);
     border-color: hsl(226, 11%, 37%);
-    background-color: hsl(225, 23%, 24%);
+    background-color: hsl(226, 25%, 17%);
     border-style: solid;
-    padding: 7px 16px;
+    border-width: 0.7px;
+    font-size: 0.8rem;
+    padding: 5px 12px;
     border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.remove:hover {
+    background-color: hsl(3, 77%, 44%);
+    border-color: hsl(3, 77%, 44%);
+}
+
+.form-check-input {
+    padding: 10px 20px;
+    background-color: hsl(226, 11%, 37%);
     cursor: pointer;
 }
 
-/* switch toggle */
+.form-check-input:checked {
+    padding: 10px 20px;
+    background-color: hsl(3, 71%, 56%);
+    border-style: none;
+}
 
-/* The switch - the box around the slider */
+
 
 
   
