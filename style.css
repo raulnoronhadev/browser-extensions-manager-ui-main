@@ -131,7 +131,7 @@ nav {
     box-sizing: border-box;
     background-color: var(--neutral-700);
     height: 150px;
-    width: 350px;
+    width: 100%;
     padding: 15px;
     border-radius: 15px;
     border-color: var(--neutral-300);
@@ -289,4 +289,44 @@ body.light-mode .form-check-input:checked {
 
 body.light-mode .form-check-input:checked:hover {
     background-color: var(--red-500);
+}
+
+/* media queries */
+
+@media(max-width: 1120px) {
+    .extension-text > p {
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width: 820px) {
+    .container-grid-extensions {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .extension-text > p {
+        font-size: 0.65rem;
+    }
+}
+
+@media(max-width: 570px) {
+
+    header {
+        margin-bottom: 30px;
+    }
+
+    .title-and-filters {
+        flex-direction: column;
+        margin-bottom: 90px;
+    }
+}
+
+@media(max-width: 555px) {
+    .container-grid-extensions {
+        grid-template-columns: 1fr;
+    }
+
+    .extension-box {
+        height: 300px;
+    }
 }
