@@ -214,6 +214,79 @@ nav {
 
 /* Light mode */
 
+body.light-mode {
+    background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+}
 
+body.light-mode header {
+    background-color: var(--neutral-0);
+}
 
-  
+body.light-mode .box-theme-icon {
+    background-color: var(--neutral-100);
+}
+
+body.light-mode #active {
+    color: var(--neutral-0);
+}
+
+body.light-mode .title > h1 {
+    color: var(--neutral-900);
+}
+
+/* filters */
+
+body.light-mode .filters ul > li {
+    background-color: var(--neutral-0);
+    color: var(--neutral-900);
+}
+
+body.light-mode .filters ul > li:hover {
+    background-color: var(--neutral-100);
+}
+
+body.light-mode #active {
+    background-color: var(--red-700)
+}
+
+body.light-mode #active:hover {
+    background-color: var(--red-500)
+}
+
+body.light-mode .extension-box {
+    background-color: var(--neutral-0);
+    border-color: var(--neutral-200);
+}
+
+body.light-mode .extension-text > h1 {
+    color: var(--neutral-900);
+}
+
+body.light-mode .extension-text > p {
+    color: var(--neutral-600);
+}
+
+body.light-mode .remove-button {
+    background-color: var(--neutral-0);
+    border-color: var(--neutral-600);
+    color: var(--neutral-900)
+}
+
+body.light-mode .remove-button:hover {
+    background-color: var(--red-700);
+    border-color: var(--red-700);
+    color: var(--neutral-0)
+}
+
+body.light-mode .form-check-input {
+    background-color: var(--neutral-300);
+}
+
+body.light-mode .form-check-input:checked {
+    background-color: var(--red-700);
+    transition: background-color 0.2s ease;
+}
+
+body.light-mode .form-check-input:checked:hover {
+    background-color: var(--red-500);
+}

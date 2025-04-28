@@ -86,4 +86,25 @@ $(".container-grid-extensions").on("click", ".remove-button", function() {
 
 // modify theme
 
+let themeToggle = $(".theme-toggle");
+
+themeToggle.on("click", function() {
+    document.body.classList.toggle('light-mode');
+    let themeIcon = $(".theme-toggle");
+    let currentSrc = themeIcon.attr("src");
+    if (currentSrc.includes("icon-sun.svg")) {
+        themeIcon.attr("src", "./assets/images/icon-moon.svg");
+    } else {
+        themeIcon.attr("src", "./assets/images/icon-sun.svg");
+    }
+
+    let mainLogo = $(".main-logo");
+    let currentLogoSrc = mainLogo.attr("src");
+
+    if (currentLogoSrc.includes("logo.png")) {
+        mainLogo.attr("src", "./assets/images/logo.svg");
+    } else {
+        mainLogo.attr("src", "./assets/images/logo.png"); // Corrigido aqui
+    }
+});
 
