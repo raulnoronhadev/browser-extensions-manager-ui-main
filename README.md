@@ -22,7 +22,7 @@ Users should be able to:
 ![](./design/final/final-result-light-mode.png)
 
 ### Live Site URL
-- https://your-live-site-url.com
+- https://raulnoronhadev.github.io/browser-extensions-manager-ui-main/
 
 ## My process
 
